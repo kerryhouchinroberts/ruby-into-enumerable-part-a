@@ -1,3 +1,18 @@
+def group_by(input, gkey)
+  result = {}
+  input.each do |obj|
+    result[obj[gkey]] = []
+  end
+
+  input.each do |obj|
+    result.each do |key, value|
+      if key == obj[gkey]
+        value << obj
+      end
+    end
+  end
+  result
+end
 
 # ------ code above this line ------
 
