@@ -1,5 +1,5 @@
 def find_by_id(input, index)
-  input.select {|input| input[:id] == index}[0]
+  input.find {|input| input[:id] == index}
 end
 
 # ------ code above this line ------
