@@ -1,3 +1,6 @@
+def find_by_id(input, index)
+  input.select {|input| input[:id] == index}[0]
+end
 
 # ------ code above this line ------
 
